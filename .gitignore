@@ -1,6 +1,7 @@
 github-release
 go-app
 bin/
+vendor/
 
 # Compiled Object files, Static and Dynamic libs (Shared Objects)
 *.o
