@@ -1,4 +1,7 @@
-FROM scratch
+FROM alpine:3.6
 
-ADD bin/docker/amd64/github-release /
-CMD ["/github-release"]
+RUN apk update && \
+	apk add ca-certificates
+
+ADD bin/docker/amd64/github-release /usr/bin/
+CMD ["/usr/bin/github-release"]
